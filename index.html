@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>nullvex | Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>nullvex | Developer Portfolio</title>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>Hello, I'm <span>nullvex</span> 👋</h1>
-    <p>I build websites, bots, tools, and automation scripts — along with cybersecurity tools for educational use.</p>
+<div class="container">
 
-    <h1> Projects</h1>
+<h1>Hello, I'm <span>nullvex</span> 👋</h1>
+<p>I build systems, automation tools, and full-stack solutions. I specialize in Python-based business systems including gym platforms, car rental systems, school dashboards, booking apps, inventory/POS systems, and backend automation.</p>
 
-    <div class="project-card">
-      <h3>NullSpyX</h3>
-      <p>A tool to grab IPs and access device cameras using social engineering. <strong>For educational and ethical use only!</strong></p>
-      <a href="NullSpyX.html" class="btn">Read more about this project</a>
-    </div>
+<h1>Projects</h1>
 
-    <div class="project-card">
-      <h3>VexRecon</h3>
-      <p>A powerful website vulnerability scanner with advanced crawling, reporting, and stealth features.</p>
-      <a href="VexRecon.html" class="btn">Read more about this project</a>
-    </div>
+<div class="project-card">
+  <h3>NullSpyX</h3>
+  <p>A social-engineering based IP & camera interaction tool. <strong>Educational use only.</strong></p>
+  <a href="NullSpyX.html" class="btn">Read more</a>
+</div>
 
-    <div class="project-card">
-      <h3>NullStorm</h3>
-      <p>A fast, multi-method Denial of Service (DoS) tool for testing server defenses and performance. Educational use only.</p>
-      <a href="NullStorm.html" class="btn">Read more about this project</a>
-    </div>
+<div class="project-card">
+  <h3>VexRecon</h3>
+  <p>Advanced vulnerability scanner with stealth crawling and auto-reporting.</p>
+  <a href="VexRecon.html" class="btn">Read more</a>
+</div>
 
+<div class="project-card">
+  <h3>NullStorm</h3>
+  <p>A fast multi-method DoS tester for server defense analysis. Ethical research only.</p>
+  <a href="NullStorm.html" class="btn">Read more</a>
+</div>
 
-    <div class="project-card">
-      <h3>Webdoxer</h3>
-      <p>A fast, threaded web scanner with directory brute-force, SQLi/XSS detection.</p>
-      <a href="webdoxer.html" class="btn">Read more about this project</a>
-    </div>
+<div class="project-card">
+  <h3>Webdoxer</h3>
+  <p>Threaded web scanner with directory brute-force and SQLi/XSS detection.</p>
+  <a href="webdoxer.html" class="btn">Read more</a>
+</div>
 
-    <div class="project-card">
-      <h1>Contact Me</h1>
-      <p>If you want to reach out, collaborate, or ask questions, feel free to get in touch!</p>
-      <h1> <a href="contact.html" class="btn secondary">Contact Now</a> </h1>
-    </div>
-  </div>
-</body>
+<h1>Custom Systems I Build</h1>
+<div class="project-card">
+  <ul>
+    <li>✔ Gym management systems</li>
+    <li>✔ Car rental/booking platforms</li>
+    <li>✔ School/academy dashboards</li>
+    <li>✔ POS & inventory systems</li>
+    <li>✔ Authentication/admin panels</li>
+    <li>✔ Automation & workflow engines</li>
+  </ul>
+  <p>Fully custom systems built from scratch — design, backend, deployment.</p>
+</div>
+
+<div class="project-card">
+  <h1>Contact Me</h1>
+  <p>Need a custom system or project?</p>
+  <h1><a href="contact.html" class="btn secondary">Contact Now</a></h1>
+</div>
+
+</div>
+
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".project-card");
-
-    cards.forEach((card, index) => {
-      setTimeout(() => {
-        card.style.animation = "slideUp 0.6s ease-out forwards";
-      }, index * 200); // 200ms delay between each card
-    });
+document.addEventListener("DOMContentLoaded",()=> {
+  document.querySelectorAll(".project-card").forEach((c,i)=>{
+    setTimeout(()=>{c.style.animation="slideUp .6s ease-out forwards"},i*200);
   });
+});
 </script>
+
+</body>
 </html>
